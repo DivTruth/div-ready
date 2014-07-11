@@ -1,0 +1,96 @@
+/******************************************************************
+Site Name: Div Ready
+Stylesheet: Tablet & Small Desktop Stylesheet
+
+    ** imports _768up-nav.scss
+******************************************************************/
+
+/*********************
+GENERAL STYLES
+*********************/
+body {}
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+.full{display: block;}
+.mobile{display:none;}
+.wrap {
+	max-width: 1020px;
+}
+
+/*********************
+HEADER SYTLES
+*********************/
+.header {
+
+}
+
+/*********************
+NAVIGATION STYLES
+*********************/
+@import '767up-nav';
+
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+#content {
+	@include twelvecol();
+	#inner-content {
+		#main {
+			@include eightcol();
+			@include first();
+		}
+	}
+}
+
+/********************
+ARTICLE STYLES
+*********************/
+
+
+/*********************
+SIDEBARS & ASIDES
+*********************/
+.sidebar {
+	
+	.widgettitle {
+		
+	}
+
+	.widget {
+		
+		ul {
+			li {
+				
+				&:first-child {}
+				&:last-child {}
+				a {}
+				/* deep nesting */
+
+				ul {
+					
+				}
+			}
+		}
+	}
+}
+
+/*********************
+FOOTER STYLES
+*********************/
+.footer {
+	ul {
+		li {
+			a {
+				&:hover {}
+			}
+			ul {}
+		}
+	}
+	#inner-footer {
+
+		
+	}
+} /* end .footer */
