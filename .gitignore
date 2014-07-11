@@ -1,1 +1,5 @@
-.sass-cache/*
+.sass-cache
+
+.project
+
+.DS_Store
