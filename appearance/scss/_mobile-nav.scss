@@ -30,13 +30,12 @@ Stylesheet: STANDARD MOBILE NAVIGATION
 							background-color: $primary-dk;
 						}
 						&.menu-icon div{
-							background: url(../images/mobile-sprite.png) no-repeat 3px 8px;
+							@include mobile-sprite(3px, 8px);
 						}
 						&.mobile-logo {
 							width: 65px;
 							div{
-								@include sprite(0px, 8px);
-								background-size: 1000px;
+								@include mobile-sprite(-36px, 8px);
 								width: 120px;
 								height: 65px;
 								z-index: 3;
@@ -51,7 +50,7 @@ Stylesheet: STANDARD MOBILE NAVIGATION
 							float: right;
 							cursor: default;
 							div {
-								background: url(../images/mobile-sprite.png) no-repeat -160px 5px;
+								@include mobile-sprite(160px, 5px);
 								width: 170px;
 								height: 55px;
 								z-index: 1;
@@ -74,36 +73,10 @@ Stylesheet: STANDARD MOBILE NAVIGATION
 								background-color: $primary;
 							}
 						}
-						&.mobile-how-this-works {
-							width: 90px;
-							float: right;
-							display: none;
-							cursor: default;
-							z-index: 2;
-							div {
-								background: url(../images/mobile-sprite.png) no-repeat -330px 5px;
-								width: 130px;
-								height: 55px;
-								margin-left: -40px;
-							}
-							a {
-								display: block;
-								width: 40px;
-								font-family: $serif;
-								font-size: .5em;
-								text-align: center;
-								text-transform: uppercase;
-								color: #a6d9f1;
-								margin: 13px 0 0 22px;
-							}
-							&:hover, &:active{
-								background-color: $primary;
-							}
-						}
 						&.search-icon {
 							float: right;
 							div{
-								background: url(../images/mobile-sprite.png) no-repeat -187px 5px;
+								@include mobile-sprite(-187px, 5px);
 							}
 						}
 					}

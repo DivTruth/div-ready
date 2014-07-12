@@ -36,11 +36,12 @@ NAVIGATION STYLES
 POSTS & CONTENT STYLES
 *********************/
 #content {
-	@include twelvecol();
+	@extend .twelvecol;
+	@extend .first;
 	#inner-content {
 		#main {
-			@include eightcol();
-			@include first();
+			@extend .eightcol;
+			@extend .first;
 		}
 	}
 }
@@ -53,6 +54,10 @@ ARTICLE STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
+#sidebars{
+	@extend .fourcol;
+	@extend .last;
+}
 .sidebar {
 	
 	.widgettitle {
@@ -81,6 +86,9 @@ SIDEBARS & ASIDES
 FOOTER STYLES
 *********************/
 .footer {
+	@extend .twelvecol;
+	@extend .first;
+	background: $secondary;
 	ul {
 		li {
 			a {

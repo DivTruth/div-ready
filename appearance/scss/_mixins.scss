@@ -63,10 +63,14 @@ $serif:          	'Times New Roman', Georgia, serif;
 	background: url(../images/sprite.png) $posX $posY no-repeat transparent;
 	background-size: 1600px;
 }
-
-/* WARNING: IF sprite image is made for retina */
-@mixin mobileSprite($posX, $posY){
+@mixin sprite_x2($posX, $posY){
 	background: url(../images/sprite.png) $posX $posY no-repeat transparent;
+	/* WARNING: IF sprite image is made for retina */
 	/* This should be half the size of the sprite.png's original size */
-	background-size: 800px; 
+	background-size: 800px;
+}
+
+@mixin mobile-sprite($posX, $posY){
+	background: url(../images/mobile-sprite.png) $posX $posY no-repeat transparent;
+	background-size: 227px; 
 }

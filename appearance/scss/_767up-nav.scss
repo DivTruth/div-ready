@@ -7,7 +7,7 @@
   border: 0;
 
   li {
-    float: right;
+    float: left; /* alignment for navigation items */
     position: relative;
 
     a, a:visited {
@@ -16,6 +16,8 @@
       font-size: .9em;
       background-color: transparent;
       text-transform: uppercase;
+      color: $white;
+      float: left;
     }
     a:hover {
       background-color: $primary-lt
