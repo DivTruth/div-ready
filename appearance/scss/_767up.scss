@@ -88,17 +88,15 @@ FOOTER STYLES
 .footer {
 	@extend .twelvecol;
 	@extend .first;
-	background: $secondary;
-	ul {
-		li {
-			a {
-				&:hover {}
-			}
-			ul {}
-		}
-	}
+	
 	#inner-footer {
-
-		
+		ul {
+			li {
+				a {
+					&:hover {}
+				}
+				ul {}
+			}
+		}	
 	}
 } /* end .footer */

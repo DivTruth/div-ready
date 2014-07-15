@@ -109,7 +109,7 @@ POSTS & CONTENT STYLES
 
 	#inner-content {
 		background: #fff;
-		
+		padding: 20px;
 		#main {
 
 		}
@@ -135,7 +135,7 @@ FOOTER STYLES
 *********************/
 .footer {
 	#inner-footer {
-		
-		
+		background: $secondary;
+		padding: 20px;
 	}
 }
