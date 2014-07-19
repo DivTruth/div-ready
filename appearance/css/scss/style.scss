@@ -1,0 +1,45 @@
+/******************************************************************
+Site Name: Div Ready
+Stylesheet: Main Stylesheet
+******************************************************************/
+
+/* import Font Awesome */
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css";
+
+@import "../../../../div-framework/appearance/css/scss/mixins";    /* import DIV FRAMEWORK mixins */
+@import "../../../../div-framework/appearance/css/scss/classes";   /* import DIV FRAMEWORK classes */
+@import "../../../../div-framework/appearance/css/scss/normalize";    /* import DIV FRAMEWORK normalize */
+
+@import "partials/mixins";       /* import mixins */
+@import "partials/forms";        /* import theme forms */
+@import "partials/base";         /* styles in base.scss */
+
+@media only screen and (min-width: 480px) { /* Smartphone (landscape mode) */
+    @import "partials/480up";     /* styles in 480up.scss */
+} 
+@media only screen and (min-width: 767px) { /* Tablet (portrait mode) */
+    /* if you would like to use your own grid simple add to your theme and change this line ) */
+    @import "../../../../div-framework/appearance/css/scss/grid"; /* import grids */
+    @import "partials/767up";     /* styles in 767up.scss */
+}
+@media only screen and (min-width: 1024px) { /* Tablet (landscape mode) & Desktop */
+    @import "partials/1024up";    /* styles in 1024up.scss */
+}
+@media only screen and (min-width: 1174px) { /* Large Monitor Stylesheet */
+    @import "partials/1174up";    /* styles in 1174up.scss */
+}
+@media only screen and (min-width: 1400px) { /* Super Large Monitor Stylesheet */
+    @import "partials/1400up";    /* styles in 1400up.scss */
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (min--moz-device-pixel-ratio: 1.5),
+    only screen and (min-device-pixel-ratio: 1.5) {
+    @import "partials/2x";        /* styles in 2x.scss */
+}
+@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  // iPhone 5 or iPod Touch 5th generation styles (you can include your own file if you want)
+  
+}
+@media print {
+    @import "partials/print";    /* styles in print.scss */
+}

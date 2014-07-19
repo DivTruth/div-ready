@@ -16,18 +16,19 @@ understand (what's inside the media queries). We also need to
 import the mixins file so SASS can understand the variables.
 */
 
-@import "../../../div-framework/appearance/scss/mixins"; /* import DIV STARTER mixins */
-@import "../../../div-framework/appearance/scss/grid"; /* import DIV STARTER mixins */
-@import "../../../div-framework/appearance/scss/normalize"; /* import DIV STARTER mixins */
+@import "../../../../div-framework/appearance/css/scss/mixins";    /* import DIV FRAMEWORK mixins */
+@import "../../../../div-framework/appearance/css/scss/classes";   /* import DIV FRAMEWORK classes */
+@import "../../../../div-framework/appearance/css/scss/normalize";    /* import DIV FRAMEWORK normalize */
+@import "../../../../div-framework/appearance/css/scss/grid";    /* import DIV FRAMEWORK normalize */
 
-@import "mixins";
-@import "base";
-@import "480up";
-@import "767up";
-@import "767up-navIE";
-@import "1024up";
-@import "1174up";
-@import "1400up";
+@import "partials/mixins";
+@import "partials/base";
+@import "partials/480up";
+@import "partials/767up";
+@import "partials/767up-navIE";
+@import "partials/1024up";
+@import "partials/1174up";
+@import "partials/1400up";
 
 /* 
 you can call the larger styles if you want, but there's really no need 
