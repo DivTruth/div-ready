@@ -1,6 +1,6 @@
 <?php 
 /**
- * Div Sidebars
+ * DF Sidebars
  * Sidebars are registered here, any additional sidebars can be added. 
  * Also consider using WooSidebars (https://wordpress.org/plugins/woosidebars/)
  *
@@ -11,12 +11,12 @@
 
 /************* ACTIVE SIDEBARS ********************/
 # Include Div Sidebars
-include(DIV_INC_DIR.'sidebars.php');
+include(DF_INC_DIR.'sidebars.php');
 
 # Activate Div Sidebars (WARNING: ^framework sidebars must be included)
-add_action( 'widgets_init', 'div_child_register_sidebars' );
+add_action( 'widgets_init', 'register_theme_sidebars' );
 
-function div_child_register_sidebars() {
+function register_theme_sidebars() {
 
     /* HEADER SIDERBARS */
     register_nav_social_icons(FALSE);
