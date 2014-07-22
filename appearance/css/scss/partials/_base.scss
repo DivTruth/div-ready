@@ -12,11 +12,6 @@ body {
 	font-family: $sans-serif;
 }
 
-.wrap {
-	width: 96%;
-	max-width: 400px;
-	margin: 0 auto;
-}
 .mobile{display: block;}
 .full{display: none;}
 .show{display: block;}
@@ -149,8 +144,12 @@ a.social_icon,
 FOOTER STYLES
 *********************/
 .footer {
+	background: $secondary;
 	#inner-footer {
-		background: $secondary;
 		padding: 20px;
+
+		.copyright{
+			text-align: center;
+		}
 	}
 }

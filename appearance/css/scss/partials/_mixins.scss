@@ -4,6 +4,15 @@ Stylesheet: Mixins & Constants Stylesheet
 ******************************************************************/
 
 /*********************
+EXTENDED CLASS
+*********************/
+.wrap {
+  width: 96%; // for mobile
+  margin: 0 auto;
+}
+$grid: 1140px;
+
+/*********************
  * THEME COLORS
 *********************/
 
