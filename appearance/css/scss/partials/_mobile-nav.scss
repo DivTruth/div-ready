@@ -5,14 +5,14 @@ Stylesheet: STANDARD MOBILE NAVIGATION
 .header {
 
 	#mobile-menu{
-		#inner-mobile-menu{
+		.inner-mobile-menu{
 			$height: 55px;
 			$width: 46px;
 			width: 100%;
 			min-width: 320px;
 			height: $height;
 			background-color: $primary;
-			#mobile-menu-header{
+			.mobile-menu-header{
 				height: 100%;
 				overflow: hidden;
 				ul.icons{
@@ -44,35 +44,6 @@ Stylesheet: STANDARD MOBILE NAVIGATION
 								background-color: $primary;
 							}
 						}
-						&.mobile-total-raised {
-							width: 160px;
-							margin-right: 20px;
-							float: right;
-							cursor: default;
-							div {
-								@include mobile-sprite(160px, 5px);
-								width: 170px;
-								height: 55px;
-								z-index: 1;
-								p {
-									color: #a6d9f1;
-									text-transform: uppercase;
-									font-size: .7em;
-									margin: 12px 0px 0px 35px;
-								}
-								span {
-									display: inline-block;
-									font-weight: bold;
-									font-size: 1.75em;
-									margin-top: -3px;
-									padding-left: 0px;
-									color: #fff;
-								}
-							}
-							&:hover,&:active{
-								background-color: $primary;
-							}
-						}
 						&.search-icon {
 							float: right;
 							div{
@@ -82,14 +53,14 @@ Stylesheet: STANDARD MOBILE NAVIGATION
 					}
 				}
 			}
-			#mobile-menu-content{
+			.mobile-menu-content{
 				float: left;
 				width: 100%;
-				#mobile-search-container{
+				.mobile-search-container{
 					background: $primary-dk;
 					padding: 5px 0px;
 					overflow: hidden;
-					#mobile-search{
+					.mobile-search{
 						overflow: hidden;
 						form{
 							input{
@@ -139,9 +110,9 @@ Stylesheet: STANDARD MOBILE NAVIGATION
 				}
 
 				#mobile{display:none;}
-				#mobile.open-close {display: block;}
-				#mobile-search-container{display:none;}
-				#mobile-search-container.open-close{display:block;}
+				.mobile.open-close {display: block;}
+				.mobile-search-container{display:none;}
+				.mobile-search-container.open-close{display:block;}
 			}
 		}
 	}

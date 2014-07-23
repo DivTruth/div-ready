@@ -105,19 +105,18 @@ jQuery(document).ready(function($) {
     jQuery Mobile Navigation 
     */
     /* toggle sliding nav and show/hide class */
-    $("#menu-icon").on("click", function(){
+    $(".menu-icon").on("click", function(){
         $(this).toggleClass('open-close');
         $("nav#mobile").slideToggle();
         $("#mobile").toggleClass('open-close');
     
     }); 
-    $("#search-icon").on("click", function(){
+    $(".search-icon").on("click", function(){
         $(this).toggleClass('open-close');
-        $("#mobile-search-container").slideToggle();
-        $("#mobile-search-container").toggleClass('open-close');
+        $(".mobile-search-container").slideToggle();
+        $(".mobile-search-container").toggleClass('open-close');
     });	
 
-    setInterval(function(){
 
     /**
      * Example BxSlider
