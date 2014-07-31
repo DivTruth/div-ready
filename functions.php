@@ -7,26 +7,23 @@
  *
  */
 
-/**
- * Actions
- *
- * @since  1.0
- * @return DivStarter
- */
-add_action('after_setup_theme', 'theme_action_adjustments', 99);
-function theme_action_adjustments(){
-	DF::add_action('df_post_content', array('df_post_info'=>12) );
+/** Actions ****************************************************************/
 
-}
-
-add_filter( 'post_info_date', function($s){
-	return '<i class="fa fa-calendar">test</i>'.$s;
-});
+	/**
+	 * Reorder the post_content call
+	 */
+	add_action('after_setup_theme', 'theme_action_adjustments', 99);
+	function theme_action_adjustments(){
+		DF::add_action('df_post_content', array('df_post_info'=>12) );
+	}
 
 
-// $my_theme = wp_get_theme( 'twentyten' );
-// if ( $my_theme->exists() )
-// 	echo $my_theme;
+/** Filters ****************************************************************/
 
-# Remove ACF Menu
-// remove_menu_page('edit.php?post_type=acf'); 
+	/**
+	 * The body is hidden until the CSS is loaded so that nothing appears until it is styled,
+	 * therefore the CSS must reset this to be displayed.
+	 */
+	add_filter( 'body_styles', function($s){
+		return 'opacity:0;filter: alpha(opacity=0); display:none;'.$s;
+	});
