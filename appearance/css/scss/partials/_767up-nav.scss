@@ -1,7 +1,7 @@
 nav {
-  background: $nav-bgr; //default navigation color
 
   .inner-nav{
+    background: $nav-bgr; //default navigation color
     border: 0;
     list-style-type: none;
     li {
@@ -10,7 +10,7 @@ nav {
 
       a, a:visited {
         border-bottom: 0;
-        padding: 26px 15px;
+        padding: 26px 20px;
         font-size: .9em;
         background-color: transparent;
         text-transform: uppercase;
@@ -128,11 +128,12 @@ nav {
   &.top-nav{
     background: $secondary;
     .inner-nav {
+      background: $secondary;
       max-width: $grid;
       margin: 0 auto;
       li {
         a, a:visited {
-          padding: 15px 15px;
+          padding: 15px 20px;
           &:hover{
             background-color: darken($secondary, 15%);
             // border-bottom: 3px solid darken($secondary, 15%);
