@@ -1,3 +1,5 @@
+$nav_pad: 20px;
+
 nav {
 
   .inner-nav{
@@ -10,7 +12,7 @@ nav {
 
       a, a:visited {
         border-bottom: 0;
-        padding: 26px 20px;
+        padding: 26px $nav_pad;
         font-size: .9em;
         background-color: transparent;
         text-transform: uppercase;
@@ -109,6 +111,18 @@ nav {
 
     } /* end .nav ul li */
 
+    li.logo {
+      padding: 0 $nav_pad;
+      height: 68px;
+      a {
+        padding: 0;
+        @include vertical-align();
+        &:hover{
+          background-color: transparent;
+        }
+      }
+    }
+
     li.parent > a:after {
       color: #ccc;
       content: ' \00BB';
@@ -133,7 +147,7 @@ nav {
       margin: 0 auto;
       li {
         a, a:visited {
-          padding: 15px 20px;
+          padding: 15px $nav_pad;
           &:hover{
             background-color: darken($secondary, 15%);
             // border-bottom: 3px solid darken($secondary, 15%);
@@ -164,6 +178,7 @@ nav {
   &.footer-nav{
     background: darken($secondary, 10%);
     .inner-nav {
+     background: darken($secondary, 10%);
       max-width: $grid;
       margin: 0 auto;
       li {
