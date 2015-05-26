@@ -1,65 +1,9 @@
 /******************************************************************
-Site Name: Paper Clouds Apparel
+Site Name: Div Ready
 Stylesheet: Admin Stylesheet
 ******************************************************************/
 #wp-admin-bar-wp-logo > .ab-item .ab-icon,
 #wpadminbar #wp-admin-bar-wp-logo.hover > .ab-item .ab-icon {
   background: url(../images/admin-logo.png) no-repeat center center;
   background-size: 20px 20px;
-}
-
-table#campaign-report{
-	width: 100%;
-	tr{
-		td{
-			border-bottom: 1px dotted #ccc;
-			padding: 5px;
-			&.label{
-				width: 30%;
-				font-weight: bold;
-			}
-		}
-	}
-}
-
-table.campaign-items{
-	width: 100%;
-	thead{
-		tr{
-			td{
-				background: #333;
-				color: #fff;
-				img{
-					float: left;
-					max-width: 75px;
-				}
-				h1{
-					text-align: center;
-					margin-top: 25px;
-				}
-			}
-		}
-	}
-	tbody{
-		display: none;
-	}
-	tr{
-		&.totals{
-			background: #ccc;
-		}
-		th{
-			text-align: left;
-		}
-		td{
-			border-bottom: 1px dotted #ccc;
-			padding: 5px;
-			&.label{
-				font-weight: bold;
-			}
-			img{
-				max-width: 40px;
-				height: auto;
-			}
-		}
-	}
 }

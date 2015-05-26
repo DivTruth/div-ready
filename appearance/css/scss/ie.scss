@@ -19,6 +19,7 @@ import the mixins file so SASS can understand the variables.
 @import "../../../../div-framework/appearance/css/scss/mixins";    /* import DIV FRAMEWORK mixins */
 @import "../../../../div-framework/appearance/css/scss/classes";   /* import DIV FRAMEWORK classes */
 @import "../../../../div-framework/appearance/css/scss/normalize";    /* import DIV FRAMEWORK normalize */
+@import "../../../../div-framework/appearance/css/scss/grid_mixins";    /* import DIV FRAMEWORK normalize */
 @import "../../../../div-framework/appearance/css/scss/grid";    /* import DIV FRAMEWORK normalize */
 
 @import "partials/mixins";

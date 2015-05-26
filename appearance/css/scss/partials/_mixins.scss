@@ -6,11 +6,13 @@ Stylesheet: Mixins & Constants Stylesheet
 /*********************
 EXTENDED CLASS
 *********************/
-.wrap {
-  width: 96%; // for mobile
-  margin: 0 auto;
-}
 $grid: 1140px;
+@mixin wrap($extend: false) {
+  @if $extend { @extend %wrap; }
+  @else { width: 96%; margin: 0 auto; max-width: $grid; }
+}
+%wrap { @include wrap; }
+.wrap { @include wrap(true); }
 
 /*********************
  * THEME COLORS
